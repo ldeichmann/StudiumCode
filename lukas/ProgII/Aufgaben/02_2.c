@@ -2,6 +2,8 @@
 #include <math.h>
 #include <string.h>
 
+#define ARRAYSIZE 600
+
 void addToArray(char *minutes, int h1, int m1, int h2, int m2);
 void printLargestFreeBlock(char *minutes);
 void printFormatHoursMinutes(int place, int size);
@@ -36,7 +38,7 @@ void printLargestFreeBlock(char *minutes)
 
 	int blockplace, blocksize, tmpplace, tmpsize, counting ;
 	blockplace = blocksize = tmpplace = tmpsize = counting = 0;
-	for (int i = 0; i < 600; i++)
+	for (int i = 0; i < ARRAYSIZE; i++)
 	{
 		if ( minutes[i] == 0 ) {
 			if ( counting == 0 ) {
@@ -72,9 +74,9 @@ void printLargestFreeBlock(char *minutes)
 int main(void)
 {
 
-	char minutes[600] = { 0 };
+	char minutes[ARRAYSIZE] = { 0 };
 
-	// for(int i = 0; i < 600; i++) {
+	// for(int i = 0; i < ARRAYSIZE; i++) {
  //        printf("%d ", minutes[i]);
 	// }
 
