@@ -1,0 +1,1 @@
+make && echo 8:15 9:45 Mathematik II VL n10:00 11:30 Programmierung II VL n12:00 13:30 Informatik II VL n13:30 14:10 Mittagessen n16:15 17:45 Informatik II PR n14:30 16:00 Mathematik II U n | ./ex02
