@@ -5,68 +5,68 @@
 
 void caesar(char text[], char offset) {
 
-	for(int i = 0; i < strlen(text); i++)
-	{
+    for(int i = 0; i < strlen(text); i++)
+    {
 
-		if (isalpha(text[i]) )
-		{
+        if (isalpha(text[i]) )
+        {
 
-			char *e;
-			int index;
-			// get char position in alphabet
-			e = strchr(alphabet, tolower(text[i]));
-			index = ((int)(e - alphabet)) - offset;
-//			printf("%c %d %c\n", text[i], index, alphabet[index] );
-			if (index >= 26) {
-				if (isupper(text[i])) {
-//					printf("%c %d %c\n", text[i], index-26, toupper(alphabet[index-26]));
-					text[i] = toupper(alphabet[index-26]);
-				} else {
-					text[i] = alphabet[index-26];
-//					printf("%c\n", alphabet[index+offset-26]);
-				}
-			} else if (index < 0) {
-				if (isupper(text[i])) {
-//					printf("%c %d %c\n", text[i], index-26, toupper(alphabet[index-26]));
-					text[i] = toupper(alphabet[index+26]);
-				} else {
-					text[i] = alphabet[index+26];
-//					printf("%c\n", alphabet[index+offset-26]);
-				}
-			} else {
-				if (isupper(text[i])) {
-					text[i] = toupper(alphabet[index]);
-//					printf("%c\n", toupper(alphabet[index+offset]));				
-				} else {
-					text[i] = alphabet[index];
-//					printf("%c\n", alphabet[index+offset]);				
-				}
-			}
+            char *e;
+            int index;
+            // get char position in alphabet
+            e = strchr(alphabet, tolower(text[i]));
+            index = ((int)(e - alphabet)) - offset;
+//          printf("%c %d %c\n", text[i], index, alphabet[index] );
+            if (index >= 26) {
+                if (isupper(text[i])) {
+//                  printf("%c %d %c\n", text[i], index-26, toupper(alphabet[index-26]));
+                    text[i] = toupper(alphabet[index-26]);
+                } else {
+                    text[i] = alphabet[index-26];
+//                  printf("%c\n", alphabet[index+offset-26]);
+                }
+            } else if (index < 0) {
+                if (isupper(text[i])) {
+//                  printf("%c %d %c\n", text[i], index-26, toupper(alphabet[index-26]));
+                    text[i] = toupper(alphabet[index+26]);
+                } else {
+                    text[i] = alphabet[index+26];
+//                  printf("%c\n", alphabet[index+offset-26]);
+                }
+            } else {
+                if (isupper(text[i])) {
+                    text[i] = toupper(alphabet[index]);
+//                  printf("%c\n", toupper(alphabet[index+offset]));                
+                } else {
+                    text[i] = alphabet[index];
+//                  printf("%c\n", alphabet[index+offset]);             
+                }
+            }
 
-//			printf("%c %d\n", text[i], index);
-
-
-
-		} else {
-
-//			printf("%c -1\n", text[i]);
-
-		}
+//          printf("%c %d\n", text[i], index);
 
 
 
-	}
+        } else {
+
+//          printf("%c -1\n", text[i]);
+
+        }
+
+
+
+    }
 
 }
 
 // void main()
 // {
-// 	char text[] = "Das ist das Haus vom Klaus";
-// 	caesar(text, 20);
+//  char text[] = "Das ist das Haus vom Klaus";
+//  caesar(text, 20);
 
-// 	for (int j = 0; j < strlen(text); j++ )
-// 	{
-// 		printf("%c", text[j] );
-// 	}
-// 	printf("\n");
+//  for (int j = 0; j < strlen(text); j++ )
+//  {
+//      printf("%c", text[j] );
+//  }
+//  printf("\n");
 // }
