@@ -24,8 +24,8 @@ def main():
 
 
 def hibernate():
-	#os.system("systemctl suspend")
-	print("systemctl suspend")
+	os.system("systemctl suspend")
+	#print("systemctl suspend")
 
 if __name__ == "__main__":
     main()
