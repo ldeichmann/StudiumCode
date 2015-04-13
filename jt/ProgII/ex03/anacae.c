@@ -3,27 +3,40 @@
 #include "caesar.h"
 #include "anacae.h"
 
+
+char most_frequent_letter(char s[])
+{
+  char c;
+  int i;
+  int biggest;
+
+  int letters[256] = {0};
+
+  for (i=0; i < strlen(s); i++)
+  {
+      int hashvalue = (int)(s[i]);
+      letters[hashvalue] += 1;
+  }
+
+  biggest = letters[0];
+  int value, biggest_found;
+  for (i=0; i < 256; i++)
+  {
+      if (letters[i] > biggest)
+      {
+          biggest = letters[i];
+          biggest_found = i;
+      }
+  }
+
+
+  c = (char) biggest_found;
+  return (c) ;
+}
+
 void anacae(char text[]) {
 
-
-//     char str[] = "thequickbrownfoxjumpedoverthelazydog";
-    char text1[] = "Xl ptk xbg lmktaexgw-dtemxk Tikbemtz, ngw wbx Nakxg lvaenzxgwkxbsxag. Pbglmhg Lfbma, wtl Dbgg tg wbx Uknlm zxshzxg, nf wxf lvaxnllebvaxg Pbgw sn xgmzxaxg, lvaenxiymx ktlva wnkva wbx Zetlmnxkxg wxk Obvmhkr Fbxmldtlxkgx, whva gbvam ktlva zxgnz, nf sn oxkabgwxkg, wtll fbm baf tnva xbg zkbxllbzxk Lmtnupbkuxe axkxbgpxamx.";
-
-    char ch;
-    int count[26] = {0};
-    int maximum = count[0];
-    int pos = 0;
-
-   for(int i = 0; i < strlen(text1); i++) {
-       text1[i] = tolower(text1[i]);
-       for (int c = 0; c < 26; c++) {
-           if (count[c] > maximum) {
-                maximum = count[c];
-                pos = c;
-           }
-       }
-   }
-
-    printf("%c %d", maximum, pos);
-//     caesar(text, text[index]);
+    printf("%c\n", most_frequent_letter(text));
+    unsigned int offNr = (most_frequent_letter(text) - 69);
+//      caesar(text, offNr);
 }

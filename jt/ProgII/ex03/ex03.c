@@ -5,14 +5,18 @@
 
 int main(void) {
     char testStr[] = {0};
+//     char testStr[] = "FH Luebeck";
+    char testStr2[] = {0};
     char in;
 
-    char testStr2[] = "Xl ptk xbg lmktaexgw-dtemxk Tikbemtz, ngw wbx Nakxg lvaenzxgwkxbsxag. Pbglmhg Lfbma, wtl Dbgg tg wbx Uknlm zxshzxg, nf wxf lvaxnllebvaxg Pbgw sn xgmzxaxg, lvaenxiymx ktlva wnkva wbx Zetlmnxkxg wxk Obvmhkr Fbxmldtlxkgx, whva gbvam ktlva zxgnz, nf sn oxkabgwxkg, wtll fbm baf tnva xbg zkbxllbzxk Lmtnupbkuxe axkxbgpxamx.";
+//     char testStr2[] = "Xl ptk xbg lmktaexgw-dtemxk Tikbemtz, ngw wbx Nakxg lvaenzxgwkxbsxag. Pbglmhg Lfbma, wtl Dbgg tg wbx Uknlm zxshzxg, nf wxf lvaxnllebvaxg Pbgw sn xgmzxaxg, lvaenxiymx ktlva wnkva wbx Zetlmnxkxg wxk Obvmhkr Fbxmldtlxkgx, whva gbvam ktlva zxgnz, nf sn oxkabgwxkg, wtll fbm baf tnva xbg zkbxllbzxk Lmtnupbkuxe axkxbgpxamx.";
 
     printf("1 crack Caesar String\n");
     printf("2 'encrypt' String\n");
     printf("3  exit\n");
     printf("Select:\n");
+
+
 
     fgets(testStr, 200, stdin);
     if ( sscanf ( testStr , "%c", &in ) == 1) {
@@ -24,11 +28,8 @@ int main(void) {
             fgets(testStr, 200, stdin);
 
             anacae(testStr);
+            printf("%s", testStr);
 
-            for (int j = 0; j < strlen(testStr); j++ )
-            {
-                printf("%c", testStr[j] );
-            }
             printf("\n");
             break;
 
@@ -42,10 +43,8 @@ int main(void) {
                 fgets(testStr, 200, stdin);
 
                 caesar(testStr, index);
-                for (int j = 0; j < strlen(testStr); j++ )
-                {
-                    printf("%s", testStr[j]);
-                }
+
+                printf("%s", testStr);
 
             }
             printf("bye\n");
