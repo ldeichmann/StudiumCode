@@ -8,45 +8,22 @@ void anacae(char text[]) {
 
 //     char str[] = "thequickbrownfoxjumpedoverthelazydog";
     char text1[] = "Xl ptk xbg lmktaexgw-dtemxk Tikbemtz, ngw wbx Nakxg lvaenzxgwkxbsxag. Pbglmhg Lfbma, wtl Dbgg tg wbx Uknlm zxshzxg, nf wxf lvaxnllebvaxg Pbgw sn xgmzxaxg, lvaenxiymx ktlva wnkva wbx Zetlmnxkxg wxk Obvmhkr Fbxmldtlxkgx, whva gbvam ktlva zxgnz, nf sn oxkabgwxkg, wtll fbm baf tnva xbg zkbxllbzxk Lmtnupbkuxe axkxbgpxamx.";
-    char str[] = {0};
 
+    char ch;
+    int count[26] = {0};
+    int maximum = count[0];
+    int pos = 0;
 
-//     int array[256] = {0};
-//     for(int i = 0; text1[i] != '\0'; i++) {
-//         array[text1[i]]++;
-//     }
-//     int max = 0;
-//     int maxchar;
-//     for(int i = 0; i < 256; i++) {
-//         if(array[i] > max) {
-//                 max = array[i];
-//                 maxchar = array[i];
-//             }
-//         }
+   for(int i = 0; i < strlen(text1); i++) {
+       text1[i] = tolower(text1[i]);
+       for (int c = 0; c < 26; c++) {
+           if (count[c] > maximum) {
+                maximum = count[c];
+                pos = c;
+           }
+       }
+   }
 
-   int max = 0;
-    int count = 0;
-    for(char q=' ';q<='~';q++)
-
-    {
-        count = 0;
-        for(int i=0; i<strlen(text);i++)
-        {
-            if(text[i]==q)
-                count++;
-        }
-
-        if(count == max)
-        {
-            maxCharacter += q;
-        }
-
-        if(count>max)
-        {
-            max=count;
-            maxCharacter=q;
-        }
-    }
-    printf("%d %c", maxchar);
+    printf("%c %d", maximum, pos);
 //     caesar(text, text[index]);
 }
