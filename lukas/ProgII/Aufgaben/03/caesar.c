@@ -17,7 +17,7 @@ void caesar(char text[], char offset) {
             e = strchr(alphabet, tolower(text[i]));
             index = ((int)(e - alphabet)) - offset;
 //          printf("%c %d %c\n", text[i], index, alphabet[index] );
-            if (index >= 26) {
+            if (index >= 26) { // out of bounds, fix that
                 if (isupper(text[i])) {
 //                  printf("%c %d %c\n", text[i], index-26, toupper(alphabet[index-26]));
                     text[i] = toupper(alphabet[index-26]);
@@ -25,7 +25,7 @@ void caesar(char text[], char offset) {
                     text[i] = alphabet[index-26];
 //                  printf("%c\n", alphabet[index+offset-26]);
                 }
-            } else if (index < 0) {
+            } else if (index < 0) { // out of bounds, fix that too
                 if (isupper(text[i])) {
 //                  printf("%c %d %c\n", text[i], index-26, toupper(alphabet[index-26]));
                     text[i] = toupper(alphabet[index+26]);
@@ -33,7 +33,7 @@ void caesar(char text[], char offset) {
                     text[i] = alphabet[index+26];
 //                  printf("%c\n", alphabet[index+offset-26]);
                 }
-            } else {
+            } else { // change letter 
                 if (isupper(text[i])) {
                     text[i] = toupper(alphabet[index]);
 //                  printf("%c\n", toupper(alphabet[index+offset]));                
