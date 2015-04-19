@@ -5,7 +5,6 @@
 int main(int argc, char *argv[]) {
     char s[512] = {0};
     FILE *f;
-    char c;
     int count = 0;
 
     //Case for direkt input
@@ -21,10 +20,10 @@ int main(int argc, char *argv[]) {
             return 1;
         }
         //wordcounting
-        while( c != EOF) {
-            c = fgetc(f);
-            if(isalpha(c) || ispunct(c))
-                count++;
+        while( !feof(f)) {
+            if(fscanf(f, "%80s", s) !=EOF ) {
+                    count++;
+            }
         }
     }
     //Case for argv input
@@ -38,11 +37,9 @@ int main(int argc, char *argv[]) {
             return 1;
         }
         //wordcounting
-        while( c != EOF) {
-            c = fgetc(f);
-            if(isalpha(c) || ispunct(c))
-                count++;
-        }
+         while(fscanf(f, "%80s", s) !=EOF ) {
+                    count++;
+         }
     }
     //output
     printf("count: %d", count);

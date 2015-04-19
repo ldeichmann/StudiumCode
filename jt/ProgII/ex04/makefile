@@ -1,9 +1,8 @@
 CC      = gcc
-CFLAGS  = -std=c11 -Wall
+CFLAGS  = -std=c11 -Wall -Wextra
 #LDFLAGS = -Wall -g -lm -lpthread `gtk-config --cflags` `gtk-config --libs` -lgthread
-DEPS = anacae.c caesar.c
-
-OBJ = ex03
+#DEPS =
+OBJ = ex04
 
 prog: $(OBJ)
 	$(CC) $(CFLAGS) -o $(OBJ) $(OBJ).c $(DEPS)
