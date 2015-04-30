@@ -1,0 +1,35 @@
+\documentclass[a4paper,10pt]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{qtree}
+
+\begin{document}
+\title{Praktikum Rechnerstrukturen 01}
+\author{Jan Lukas Deichmann / Jan-Tjorve Sobieski}
+\graphicspath{{images/}}
+\maketitle
+\noindent
+\\\underline{1.2c i}\\\\
+Gesucht: $X_{3} \land X_{2} \land X_{1} \land X_{0}$ (4AND)\\\\
+$(X_{3} \land X_{2}) \land (X_{1} \land X_{0})$ (Assoziativität) \\
+$\Leftrightarrow$ $X_{3} \land X_{2} \land (X_{1} \land X_{0})$ (Assoziativität)\\
+$\Leftrightarrow$ $X_{3} \land X_{2} \land X_{1} \land X_{0}$\\\\
+Gesucht: $X_{2} \land X_{1} \land X_{0}$ (3AND)\\\\
+$(X_{2} \land X_{1}) \land X_{0}$ (Assoziativität) \\
+$\Leftrightarrow$ $X_{2} \land X_{1} \land X_{0}$ \\\\
+\underline{1.2c ii}
+\begin{table}[h]
+\begin{tabular}{l r}
+    \Tree[.$\lor$ [.$X_{0}$ ]
+    [.$\lor$ [.$X_{2}$ ]
+        [.$X_{1}$ ]]]
+ & \Tree[.$\lor$3 [.$X_{0}$ ]
+ [.$X_{1}$ ] [.$X_{2}$ ] ]
+\end{tabular}
+\end{table}
+\\Die Tiefe des Ausdrucks verändert sich nicht, da ein normaler Operatorbaum mit einem erweiterten Operatorbaum nicht verglichen werden kann.
+\end{document}
