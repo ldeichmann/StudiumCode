@@ -79,19 +79,19 @@ void dequeue(QueuePtr queue, char* taskName) {
  */
 void destroyQueue(QueuePtr queue) {
 
-    if (queue->head != 0) {
+    if (queue->head) {
         TaskListNodePtr current = queue->head;
         TaskListNodePtr next;
-        if (queue->head->next != 0) {
+        if (queue->head->next) {
             next = queue->head->next;
         }
 
-        while (current != 0) {
+        while (current) {
 
             free(current);
-            if (next != 0) {
+            if (next) {
                 current = next;
-                if (current->next != 0) {
+                if (current->next) {
                     next = current->next;
                 }
             }
@@ -103,7 +103,8 @@ void destroyQueue(QueuePtr queue) {
 }
 
 /**
- * TODO Dokumentation (Zusammen 10 Punkte)
+ * Gibt die Liste der in der Queue gespeicherten Tasks aus,
+ * indem element->next bis NULL gefolgt wird (Zusammen 10 Punkte)
  * @param queue
  */
 void printQueue(QueuePtr queue) {
