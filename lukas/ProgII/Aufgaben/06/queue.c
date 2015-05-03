@@ -83,7 +83,7 @@ void destroyQueue(QueuePtr queue) {
         TaskListNodePtr current = queue->head;
         TaskListNodePtr next;
         if (queue->head->next != 0) {
-            TaskListNodePtr next = queue->head->next;
+            next = queue->head->next;
         }
 
         while (current != 0) {
