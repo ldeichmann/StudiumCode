@@ -1,2 +1,0 @@
-#!/bin/bash
-gcc -std=c11 queue.c tasks.c main.c -o main.out
