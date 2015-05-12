@@ -70,11 +70,18 @@ $x_{3}$ \=$x_{2}$ \=$x_{1}$ \=$x_{0}$ \=y \kill
 \underline{1.4a ii}\\\\
 f: $\mathbb{B}^4$ $\rightarrow$ $\mathbb{B}^1$\\\\
 $f(x_{3},x_{2},x_{1},x_{0})$ = \\ \((x_{3} \land x_{2} \land \overline{x_{1}} \land \overline{x_{0}}) \lor  (x_{3} \land \overline{x_{2}} \land x_{1} \land \overline{x_{0}}) \lor (x_{3} \land \overline{x_{2}} \land \overline{x_{1}} \land x_{0}) \lor\\ (\overline{x_{3}} \land x_{2} \land x_{1} \land \overline{x_{0}}) \lor (\overline{x_{3}} \land x_{2} \land \overline{x_{1}} \land x_{0}) \lor (\overline{x_{3}} \land \overline{x_{2}} \land x_{1} \land x_{0})\)\\\\
-\karnaughmap{4}{$KV$}{{$x_{3}$}{$x_{1}$}{$x_{2}$}{$x_{0}$}}{0001 0110 0110 1000}{}\\\\
+\karnaughmap{4}{$KV$}{{$x_{3}$}{$x_{1}$}{$x_{2}$}{$x_{0}$}}{0001 0110 0110 1000}{}\\
+Aus diesem Diagramm lässt sich ablesen, dass eine Minimierung nicht möglich ist.
 \newpage
 \noindent
 \underline{1.4a iii}\\\\
 \underline{1.4d}\\\\
 Bei der Verwendung von zweier Ungattern anstatt vierer Undgatter ist es möglich sich doppelt vorkommende Gatter zu sparen z.B. kommt der Teiltherm $\overline{x_{3}}$ $\land$ $\overline{x_{2}}$ zweimal in der Boolschen Formel vor, somit braucht man den Therm nur einmal in der Schaltung implimentieren.\\
-\Tree [.$\lor$  [.$\lor$ [.$\lor$ [.$\land$ [.$x_{3}$ ] [.$x_{2}$ ] ] [.$\land$ [.$\lnot$ $x_{1}$ ] [.$\lnot$ $x_{0}$ ] ]] [.$\lor$ fun ] ] [.$\lor$ [.$\land$ is ] [.$\land$ fun ] ] ]
+\newpage
+\noindent
+\begin{table}[h]
+\begin{tabular}{l}
+\Tree [.$\lor$  [.$\lor$ [.$\lor$ [.$\land$ [.$\land$ [.$x_{3}$ ] [.$x_{2}$ ] ] [.$\land$ [.$\lnot$ $x_{1}$ ] [.$\lnot$ $x_{0}$ ]] ] [.$\land$ [.$\land$ [.$x_{3}$ ] [.$\lnot$ $x_{2}$ ] ] [.$\land$ [.$x_{1}$ ] [.$\lnot$ $x_{0}$ ] ] ] ] [.$\lor$ [.$\land$ [.$\land$ [.$x_{3}$ ] [.$\lnot$ $x_{2}$ ] ] [.$\land$ [.$\lnot$ $x_{1}$ ] [.$x_{0}$ ] ] ] [.$\land$ [.$\land$ [.$\lnot$ $x_{3}$ ] [.$x_{2}$ ] ] [.$\land$ [.$x_{1}$ ] [.$\lnot$ $x_{0}$ ] ] ] ] ] [.$\lor$ [.$\land$ [.$\land$ [.$\lnot$ $x_{3}$ ] [.$x_{2}$ ] ] [.$\land$ [.$\lnot$ $x_{1}$ ] [.$x_{0}$ ] ] ] [.$\land$ [.$\land$ [.$\lnot$ $x_{3}$ ] [.$\lnot$ $x_{2}$ ] ] [.$\land$ [.$x_{1}$ ] [.$x_{0}$ ] ] ] ] ]
+\end{tabular}
+\end{table}
 \end{document}
