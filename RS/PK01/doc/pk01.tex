@@ -5,7 +5,7 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{graphicx}
-\usepackage{qtree}
+\usepackage{tikz-qtree}
 \input kvmacros
 
 \begin{document}
@@ -79,9 +79,7 @@ Aus diesem Diagramm lässt sich ablesen, dass eine Minimierung nicht möglich is
 Bei der Verwendung von zweier Ungattern anstatt vierer Undgatter ist es möglich sich doppelt vorkommende Gatter zu sparen z.B. kommt der Teiltherm $\overline{x_{3}}$ $\land$ $\overline{x_{2}}$ zweimal in der Boolschen Formel vor, somit braucht man den Therm nur einmal in der Schaltung implimentieren.\\
 \newpage
 \noindent
-\begin{table}[h]
-\begin{tabular}{l}
+\begin{tikzpicture}[scale=1]
 \Tree [.$\lor$  [.$\lor$ [.$\lor$ [.$\land$ [.$\land$ [.$x_{3}$ ] [.$x_{2}$ ] ] [.$\land$ [.$\lnot$ $x_{1}$ ] [.$\lnot$ $x_{0}$ ]] ] [.$\land$ [.$\land$ [.$x_{3}$ ] [.$\lnot$ $x_{2}$ ] ] [.$\land$ [.$x_{1}$ ] [.$\lnot$ $x_{0}$ ] ] ] ] [.$\lor$ [.$\land$ [.$\land$ [.$x_{3}$ ] [.$\lnot$ $x_{2}$ ] ] [.$\land$ [.$\lnot$ $x_{1}$ ] [.$x_{0}$ ] ] ] [.$\land$ [.$\land$ [.$\lnot$ $x_{3}$ ] [.$x_{2}$ ] ] [.$\land$ [.$x_{1}$ ] [.$\lnot$ $x_{0}$ ] ] ] ] ] [.$\lor$ [.$\land$ [.$\land$ [.$\lnot$ $x_{3}$ ] [.$x_{2}$ ] ] [.$\land$ [.$\lnot$ $x_{1}$ ] [.$x_{0}$ ] ] ] [.$\land$ [.$\land$ [.$\lnot$ $x_{3}$ ] [.$\lnot$ $x_{2}$ ] ] [.$\land$ [.$x_{1}$ ] [.$x_{0}$ ] ] ] ] ]
-\end{tabular}
-\end{table}
+\end{tikzpicture}
 \end{document}
