@@ -41,24 +41,34 @@ $f(x_{3},x_{2},x_{1},x_{0})$ = \\\( (\lnot x_{2} \land x_{1} \land x_{0}) \lor (
 \underline{1.2e}\\\\
 f: $\mathbb{B}^4$ $\rightarrow$ $\mathbb{B}^1$\\\\
 $f(x_{3},x_{2},x_{1},x_{0})$ = \\\( (\lnot x_{2} \land x_{1} \land x_{0}) \lor (\lnot x_{3} \land x_{1} \land x_{0}) \lor (\lnot x_{3} \land x_{2} \land x_{0}) \lor (x_{2} \land \lnot x_{1} \land x_{0}) \\\lor (\lnot x_{3} \land \lnot x_{2} \land x_{1} \land \lnot x_{0})\)\\\\
-\newpage
-\noindent
 \underline{1.3}\\\\
 Beschreibung der Funktion:\\
 Ein Volladdierer, aufgebaut aus zwei Halbaddierern.\\\\
-\underline{1.4a}
+\newpage
+\noindent
 \underline{1.4a i}
 \begin{tabbing}
-\underline{$x_{3}$ $x_{2}$ $x_{1}$ $x_{0}$ Y} \\
-$x_{3}$ \=$x_{2}$ \=$x_{1}$ \=$x_{0}$ \=Y \kill
+\underline{$x_{3}$ $x_{2}$ $x_{1}$ $x_{0}$ y} \\
+$x_{3}$ \=$x_{2}$ \=$x_{1}$ \=$x_{0}$ \=y \kill
+0 \>0 \>0 \>0 \>0\\
+0 \>0 \>0 \>1 \>0\\
+0 \>0 \>1 \>0 \>0\\
 0 \>0 \>1 \>1 \>1\\
+0 \>1 \>0 \>0 \>0\\
 0 \>1 \>0 \>1 \>1\\
 0 \>1 \>1 \>0 \>1\\
+0 \>1 \>1 \>1 \>0\\
+1 \>0 \>0 \>0 \>0\\
 1 \>0 \>0 \>1 \>1\\
 1 \>0 \>1 \>0 \>1\\
-1 \>1 \>0 \>0 \>1\\\\\\
+1 \>0 \>1 \>1 \>0\\
+1 \>1 \>0 \>0 \>1\\
+1 \>1 \>0 \>1 \>0\\
+1 \>1 \>1 \>0 \>0\\
+1 \>1 \>1 \>1 \>0\\
 \end{tabbing}
 \underline{1.4a ii}\\\\
+f: $\mathbb{B}^4$ $\rightarrow$ $\mathbb{B}^1$\\\\
  $f(x_{3},x_{2},x_{1},x_{0})$ = \\ \((x_{3} \land x_{2} \land \overline{x_{1}} \land \overline{x_{0}}) \lor  (x_{3} \land \overline{x_{2}} \land x_{1} \land \overline{x_{0}}) \lor (x_{3} \land \overline{x_{2}} \land \overline{x_{1}} \land x_{0}) \lor\\ (\overline{x_{3}} \land x_{2} \land x_{1} \land \overline{x_{0}}) \lor (\overline{x_{3}} \land x_{2} \land \overline{x_{1}} \land x_{0}) \lor (x_{3} \land \overline{x_{2}} \land x_{1} \land x_{0})\)\\\\
  \karnaughmap{4}{$KV$}{{$x_{3}$}{$x_{1}$}{$x_{2}$}{$x_{0}$}}{0001 0110 0110 1000}{}
 \end{document}
