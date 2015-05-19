@@ -78,8 +78,8 @@ Aus diesem Diagramm lässt sich ablesen, dass eine Minimierung nicht möglich is
 \begin{tikzpicture}[scale=1]
 \Tree [.$\lor$  [.$\lor$ [.$\lor$ [.$\land$ [.$\land$ [.$x_{3}$ ] [.$x_{2}$ ] ] [.$\land$ [.$\lnot$ $x_{1}$ ] [.$\lnot$ $x_{0}$ ]] ] [.$\land$ [.$\land$ [.$x_{3}$ ] [.$\lnot$ $x_{2}$ ] ] [.$\land$ [.$x_{1}$ ] [.$\lnot$ $x_{0}$ ] ] ] ] [.$\lor$ [.$\land$ [.$\land$ [.$x_{3}$ ] [.$\lnot$ $x_{2}$ ] ] [.$\land$ [.$\lnot$ $x_{1}$ ] [.$x_{0}$ ] ] ] [.$\land$ [.$\land$ [.$\lnot$ $x_{3}$ ] [.$x_{2}$ ] ] [.$\land$ [.$x_{1}$ ] [.$\lnot$ $x_{0}$ ] ] ] ] ] [.$\lor$ [.$\land$ [.$\land$ [.$\lnot$ $x_{3}$ ] [.$x_{2}$ ] ] [.$\land$ [.$\lnot$ $x_{1}$ ] [.$x_{0}$ ] ] ] [.$\land$ [.$\land$ [.$\lnot$ $x_{3}$ ] [.$\lnot$ $x_{2}$ ] ] [.$\land$ [.$x_{1}$ ] [.$x_{0}$ ] ] ] ] ]
 \end{tikzpicture}
-\underline{1.4d}\\\\
-Bei der Verwendung von zweier Undgattern anstatt vierer Undgatter ist es möglich sich doppelt vorkommende Gatter zu sparen z.B. kommt der Teilterm $\overline{x_{3}}$ $\land$ $\overline{x_{2}}$ zweimal in der Boolschen Formel vor, somit braucht man den Term nur einmal in der Schaltung implimentieren.\\\\
 \underline{1.4a}\\\\
-ON(f) := \{x $\in\mathbb{B}^4$ | f(x) = 1\}\\
+ON(f) := \{x $\in\mathbb{B}^4$ | f(x) = 1\}\\\\
+\underline{1.4d}\\\\
+Bei der Verwendung zweier Undgatter anstatt vierer Undgatter ist es möglich, sich doppelt vorkommende Gatter zu sparen. Zum Beispiel kommt der Teilterm $\overline{x_{3}}$ $\land$ $\overline{x_{2}}$ zweimal in der Boolschen Formel vor, somit braucht man den Term nur einmal in der Schaltung zu implementieren.\\\\
 \end{document}
