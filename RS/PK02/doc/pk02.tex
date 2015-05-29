@@ -1,0 +1,84 @@
+\documentclass[a4paper,10pt]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{tikz-qtree}
+\input kvmacros
+
+\begin{document}
+\title{Praktikum Rechnerstrukturen 02}
+\author{Jan Lukas Deichmann / Jan-Tjorve Sobieski}
+\graphicspath{{images/}}
+\maketitle
+\noindent
+\newpage
+\underline{2.2a}\\\\
+f: $\mathbb{B}^4$ $\rightarrow$ $\mathbb{B}^6$\\\\
+$f(x_{3},x_{2},x_{1},x_{0})$ = $(y_{5},y_{4},y_{3},y_{2},y_{1},y_{0})$ für\\\
+$y_{0}$ = $(x_{3} \lor x_{2} \lor x_{1} \lor x_{0})$\\\
+$y_{1}$ = $(x_{3} \lor (x_{2} \land x_{1}))$\\\
+$y_{2}$ = $(x_{3} \lor (x_{2} \land x_{1} \land x_{0}))$\\\
+$y_{3}$ = $(x_{3} \land \lnot(x_{2} \land x_{1} \land x_{0}))$\\\
+$y_{4}$ = $((x_{3} \land x_{2}) \lor (x_{3} \land x_{1}))$\\\
+$y_{5}$ = $(x_{0} \land x_{1} \land x_{2} \land x_{3})$\\\
+\\\\\\
+\underline{2.2b}\\\\
+ON($f_{0}$) = \{0000\}\\\
+ON($f_{1}$) = \{0001, 0010, 0011, 0100, 0101, 0110, 0111, 1000, 1001, 1010, 1011, 1100, 1101, 1110, 1111\}\\\
+ON($f_{2}$) = \{0110, 0111, 1000, 1001, 1010, 1011, 1100, 1101, 1110, 1111\}\\\
+ON($f_{3}$) = \{0111, 1000, 1001, 1010, 1011, 1100, 1101, 1110, 1111\}\\\
+ON($f_{4}$) = \{1001, 1010, 1011, 1100, 1101, 1110, 1111\}\\\
+ON($f_{5}$) = \{1010, 1011, 1100, 1101, 1110, 1111\}\\\
+ON($f_{6}$) = \{1111\}\\\
+\\\\\\
+\newpage
+\underline{2.2c}\\\\
+
+Die minimierten Formen entsprechen den bereits beim Ablesen zusammengefassten Werten aus 2.2a.\\
+
+f: $\mathbb{B}^4$ $\rightarrow$ $\mathbb{B}^6$\\\\
+$f(x_{3},x_{2},x_{1},x_{0})$ = $(y_{5},y_{4},y_{3},y_{2},y_{1},y_{0})$ für\\\
+$y_{0}$ = $(x_{3} \lor x_{2} \lor x_{1} \lor x_{0})$\\\
+$y_{1}$ = $(x_{3} \lor (x_{2} \land x_{1}))$\\\
+$y_{2}$ = $(x_{3} \lor (x_{2} \land x_{1} \land x_{0}))$\\\
+$y_{3}$ = $(x_{3} \land \lnot(x_{2} \land x_{1} \land x_{0}))$\\\
+$y_{4}$ = $((x_{3} \land x_{2}) \lor (x_{3} \land x_{1}))$\\\
+$y_{5}$ = $(x_{0} \land x_{1} \land x_{2} \land x_{3})$\\\
+\\\\\\
+
+\underline{2.3a}\\\\
+f: $\mathbb{B}^3$ $\rightarrow$ $\mathbb{B}^3$\\\\
+$f(x_{2},x_{1},x_{0})$ = $(y_{2},y_{1},y_{0})$ für\\\
+$y_{0}$ = $((\lnot x_{2} \land x_{1} \land \lnot x_{0}) \lor (\lnot x_{2} \land x_{1} \land x_{0}) \lor (x_{2} \land \lnot x_{1} \land x_{0}))$\\\
+$y_{1}$ = $((\lnot x_{2} \land x_{1} \land \lnot x_{0}) \lor (x_{2} \land \lnot x_{1} \land x_{0}) \lor (x_{2} \land x_{1} \land x_{0}))$\\\
+$y_{2}$ = $((\lnot x_{2} \land x_{1} \land x_{0}) \lor (x_{2} \land \lnot x_{1} \land x_{0}))$\\\
+\\\\\\
+
+\underline{2.3b}\\\\
+ON($f_{0}$) = \{010, 011, 101\}\\\
+ON($f_{1}$) = \{010, 101, 111\}\\\
+ON($f_{2}$) = \{011, 101\}\\\\
+DC($f_{0}$) = \{000, 001, 100, 110\}\\\
+DC($f_{1}$) = \{000, 001, 100, 110\}\\\
+DC($f_{2}$) = \{000, 001, 100, 110\}\\\
+
+\newpage
+\underline{2.3c}\\\\
+\karnaughmap{3}{}{{$x_{2}$}{$x_{1}$}{$x_{0}$}}{0011 0100}{}
+\put(-3,0.5){\oval(1.9,0.9)[]}\\\
+Führt zu:\\\
+$y_{0}$ = $((\lnot x_{2} \land x_{1}) \lor (x_{2} \land \lnot x_{1} \land x_{0}))$\\\
+\\\\
+\karnaughmap{3}{}{{$x_{2}$}{$x_{1}$}{$x_{0}$}}{0010 0101}{}
+\put(-1.5,1){\oval(0.9,1.9)[]}\\\
+Führt zu:\\\
+$y_{1}$ = $((x_{2} \land x_{0}) \lor (\lnot x_{2} \land x_{1} \land \lnot x_{0}))$\\\
+\\\\
+\karnaughmap{3}{}{{$x_{2}$}{$x_{1}$}{$x_{0}$}}{0001 0100}{}\\\
+Führt weiterhin zu:\\\
+$y_{2}$ = $((\lnot x_{2} \land x_{1} \land x_{0}) \lor (x_{2} \land \lnot x_{1} \land x_{0}))$\\\
+\\\\
+\end{document}
