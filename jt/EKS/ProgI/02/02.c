@@ -11,16 +11,16 @@ sollen nur Messwerte berücksichtigt werden, die über 42 liegen bzw.gleich 42 sin
 (a)Beschreiben Sie, welche Daten das Programm verwalten und welche Rechnungen
 durchzuführen sind.
 
-- Wir brauchen eine Zaehler der mit zaehlt wie viele Messwerte eingegeben werden
-- einen Eingabe Buffer 
-- Variablen fuer den Durchschnitt und die Summe aller Messwerte
+- wir brauchen einen Zaehler um die Anzahl der eingegebenen Messwerte zu zaehlen
+  ausserdem noch einen Eingangsbuffer und Variablen zum speichern vom eingegeben
+  Messwert
 
-- Es muss der Durchschnitt aller eingegeben Messwerte errechnet werden also alle Messwerte durch die Anzahl der eingegeben Werte
+  Alle Werte werden zu einer Summe zusammengerechnet und am Ende des Programms 
+  durch die Anzahl der Messwerte geteilt
 
 (b)Entscheiden Sie, welche Datentypen Sie dafür in C verwenden.Begründen Sie
 Ihre Entscheidung.
-
-- da auch Komma Zahlen moeglich sind habe ich mich fuer double entschieden, ausser beim Zaehler
+- Ich habe mich fuer double entschieden, da Abgaswerte auch im Komma bereich liegen koennen
 
 (c)Modellieren Sie den Programmablauf durch ein Aktivitätsdiagramm.
 
@@ -45,7 +45,7 @@ int messwerteingabe(void) {
 		sscanf(buffer, "%lf", &messwert);
 		if (messwert < 42) {
 			printf("wrong value!\n");
-			return 0;
+			continue;
 		}
 		summe += messwert;
 
