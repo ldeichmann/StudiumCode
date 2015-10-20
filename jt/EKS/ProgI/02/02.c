@@ -37,6 +37,8 @@ int messwerteingabe(void) {
 	double summe = 0;
 	double messwert = 0;
 	char c = 'j';
+	double maxv = 0.0;
+	int maxcount = 0;
 
 	while (c == 'j') {
 		printf("\nMesswert:");
@@ -47,6 +49,15 @@ int messwerteingabe(void) {
 			printf("wrong value!\n");
 			continue;
 		}
+		if (messwert > maxv) {
+			maxv = messwert;
+			maxcount = 0;
+		}
+
+		if (messwert == maxv) {
+			maxcount++;
+		}
+
 		summe += messwert;
 
 		zaehler++;
@@ -57,7 +68,7 @@ int messwerteingabe(void) {
 	}
 
 	printf("\n\ndas Ergebnis ist: %lf\n\n", summe / zaehler);
-
+	printf("\n\nMaxwert ist: %lf und er kommt %d vor\n\n", maxv, maxcount);
 
 	return 0;
 }
