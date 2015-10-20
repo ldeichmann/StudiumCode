@@ -10,7 +10,7 @@ int main() {
 		printf("Fork failed.");
 		return -1;
 	} else if (pid == 0) { // child
-		printf("Hello, I am a child and my pid is %d\n", getpid() );
+		printf("Hello, I am a child and my pid is %d and my parent pid is %d\n", getpid(), getppid() );
 		printf("Hello, I am a child and I am going to change i = %d now\n", i);
 		i = 50;
                 printf("Hello, I am a child and I changed i to i = %d\n", i);
