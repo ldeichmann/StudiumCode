@@ -12,11 +12,11 @@ sollen nur Messwerte berücksichtigt werden, die über 42 liegen bzw.gleich 42 sin
 durchzuführen sind.
 
 - wir brauchen einen Zaehler um die Anzahl der eingegebenen Messwerte zu zaehlen
-  ausserdem noch einen Eingangsbuffer und Variablen zum speichern vom eingegeben
-  Messwert
+ausserdem noch einen Eingangsbuffer und Variablen zum speichern vom eingegeben
+Messwert
 
-  Alle Werte werden zu einer Summe zusammengerechnet und am Ende des Programms 
-  durch die Anzahl der Messwerte geteilt
+Alle Werte werden zu einer Summe zusammengerechnet und am Ende des Programms
+durch die Anzahl der Messwerte geteilt
 
 (b)Entscheiden Sie, welche Datentypen Sie dafür in C verwenden.Begründen Sie
 Ihre Entscheidung.
@@ -31,39 +31,56 @@ Ihre Entscheidung.
 
 int messwerteingabe(void) {
 
-	//counter fuer Durchschnittsrechnung
-	unsigned int zaehler = 0;
 	
-	//Input buffer fuer Konsoleneingabe
 	char buffer[21];
+
 	double durchschnitt;
 	double summe = 0;
 	double messwert = 0;
+
 	char c = 'j';
+	
+	//Variabl um Maxvalue zu finden
+	double maxv = 0.0;
+	
+	//zaehlt wie oft Maxvalue vorkommt
+	unsigned int maxcount = 0;
+	
+	//counter fuer Durchschnittsrechnung
+	unsigned int zaehler = 0;
 
 	while (c == 'j') {
 		printf("\nMesswert:");
-		//Eingabe
+
 		gets_s(buffer, 21);
 		sscanf(buffer, "%lf", &messwert);
-		//Abfrage ob messwert groesser als 42 ist
 		if (messwert < 42) {
 			printf("wrong value!\n");
 			continue;
 		}
+		
+		//Abfrage ob Messwert der gerade groesste eingegebene Wert ist
+		//wenn ja neuen Maxwert setzten und den Counter auf 0 setzten
+		if (messwert > maxv) {
+			maxv = messwert;
+			maxcount = 0;
+		}
+
+		//Wenn Maxwert mehrmals vorkommt index hochzaehlen
+		if (messwert == maxv)
+			maxcount++;
+
 		summe += messwert;
 
 		zaehler++;
 
-		//Eingabe ob weiter oder nicht
 		printf("\nweiter? (j)a oder (n)ein:");
 		gets_s(buffer, 21);
 		sscanf(buffer, "%c", &c);
 	}
 
-	//Rechnung
 	printf("\n\ndas Ergebnis ist: %lf\n\n", summe / zaehler);
-
+	printf("\n\nMaxwert ist: %lf und er kommt %d vor\n\n", maxv, maxcount);
 
 	return 0;
 }

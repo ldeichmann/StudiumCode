@@ -38,6 +38,7 @@ Ihre Entscheidung.
 
 #include <stdio.h>
 
+//Funktion zum malen der Rauten auf Konsole
 void drawOnScreen(int x) {
 	int i = 0;
 	for (i = 0; i < x; i++) {
@@ -47,16 +48,24 @@ void drawOnScreen(int x) {
 
 int main(void) {
 
+	//Prozentzahlen der Spieler
 	double player1;
 	double player2;
 	double player3;
-	int caller;
+	
+	//Insgesamt Anrufer
+	unsigned int caller;
+
+	//Input Buffer fuer Konsoleneingabe
 	char buffer[21];
 
-	int play1;
-	int play2;
-	int play3;
 
+	//Zahlenspeicher fuer einzelne Spieler
+	unsigned int play1;
+	unsigned int play2;
+	unsigned int play3;
+
+	//Eingabe
 	printf("Alexander: ");
 	gets_s(buffer, 21);
 	sscanf(buffer, "%d", &play1);
@@ -69,11 +78,13 @@ int main(void) {
 	gets_s(buffer, 21);
 	sscanf(buffer, "%d", &play3);
 
+	//Rechnung
 	caller = play1 + play2 + play3;
 	player1 = (double) play1 / caller * 50;
 	player2 = (double) play2 / caller * 50;
 	player3 = (double) play3 / caller * 50;
 
+	//Ausgabe
 	printf("Alexander: \t");
 	drawOnScreen(player1);
 	printf("\n");
