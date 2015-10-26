@@ -33,16 +33,14 @@ int main() {
             break;
         }
     }
-    if (ppid != getpid()) {
-        printf("I am %d and I am waiting.\n", getpid());
-        wait(&status);
-        printf("I am %d and I am done.\n", getpid());
-
-    } else {
-        sleep(1);
+    if (ppid == getpid()) {
         printf("I am the parent, my PID is %d and I'm waiting now.\n", getpid());
         wait(&status);
         printf("I am the parent, we're done here.\n");
+    } else {
+        printf("I am %d and I am waiting.\n", getpid());
+        wait(&status);
+        printf("I am %d and I am done.\n", getpid());
     }
 
 
