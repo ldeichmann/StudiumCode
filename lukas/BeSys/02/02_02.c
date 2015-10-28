@@ -5,6 +5,7 @@
 
 int main() {
     pid_t pid;
+    int status;
     pid = fork();
     if (pid < 0) { // failed fork
         printf("Fork failed.");
@@ -16,7 +17,6 @@ int main() {
         printf("Hello children, my PID is %d\n", getpid() );
         sleep(2);
         printf("Hello children, I am now going to wait for you.\n");
-        int status;
         wait(&status);
         printf("Hello children, your exit status was %d, I am done waiting.\n", status);
     }

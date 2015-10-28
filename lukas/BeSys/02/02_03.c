@@ -4,7 +4,7 @@
 #include <sys/wait.h>
 
 int main() {
-    int i;
+    int status, i;
     pid_t pid;
 
     for( i = 0; i < 3; i++ ) {
@@ -18,7 +18,6 @@ int main() {
     if (pid > 0) {
         sleep(1);
         printf("I am the parent, my PID is %d and I'm waiting now.\n", getpid());
-        int status;
         wait(&status);
 //        printf("... und tschüss.\n");
 
