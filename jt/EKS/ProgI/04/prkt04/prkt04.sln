@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "prkt04", "prkt04\prkt04.vcxproj", "{6C353266-8022-4A73-BFB3-682ACE47BD4F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "prkt05a", "prkt05a\prkt05a.vcxproj", "{8196B701-4DDB-4D1E-8D26-5139680CCDBA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -15,6 +17,10 @@ Global
 		{6C353266-8022-4A73-BFB3-682ACE47BD4F}.Debug|Win32.Build.0 = Debug|Win32
 		{6C353266-8022-4A73-BFB3-682ACE47BD4F}.Release|Win32.ActiveCfg = Release|Win32
 		{6C353266-8022-4A73-BFB3-682ACE47BD4F}.Release|Win32.Build.0 = Release|Win32
+		{8196B701-4DDB-4D1E-8D26-5139680CCDBA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8196B701-4DDB-4D1E-8D26-5139680CCDBA}.Debug|Win32.Build.0 = Debug|Win32
+		{8196B701-4DDB-4D1E-8D26-5139680CCDBA}.Release|Win32.ActiveCfg = Release|Win32
+		{8196B701-4DDB-4D1E-8D26-5139680CCDBA}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

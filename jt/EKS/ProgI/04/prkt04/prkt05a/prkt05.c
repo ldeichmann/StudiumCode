@@ -1,7 +1,14 @@
-#include <stdio.h>
-//#include <math.h>
+/*
+* Jan-Tjorve Sobieski
+* Gruppe Dienstag 14:30
+* Praktikum Nr. 4
+*
+*/
 
-#define PI 3.1415
+#include <stdio.h>
+#include <math.h>
+
+#define PI 3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679  
 
 /* Prototypen fuer Aufgaben */
 int cubeSurfaceArea(int length);
@@ -9,6 +16,7 @@ double circleCircumference(double radius);
 void printTri(unsigned int size);
 int areCoprime(unsigned int a, unsigned int b);
 int ggt(unsigned int a, unsigned int b);
+unsigned int binomialCoefficient(unsigned int n, unsigned int k);
 
 /*Aufgaben
 
@@ -44,6 +52,7 @@ void printTri(unsigned int size) {
 	unsigned int x = 0;
 
 	printf("\n");
+	//Sterne malen mit Schleife
 	for (i = 0; i < size; i++){
 		for (j = 0; j <= i; j++){
 			printf("*");
@@ -52,6 +61,9 @@ void printTri(unsigned int size) {
 	}
 }
 
+/*
+* Alternatives Dreieck
+*/
 //void printTri(unsigned int size) {
 //	int i = 0;
 //	int j = 0;
@@ -87,18 +99,42 @@ void printTri(unsigned int size) {
 */
 
 int areCoprime(unsigned int a, unsigned int b) {
+	//Wenn ggt von beiden Zahlen 1 ist, dann sind sie nicht teilerfremd
 	if (ggt(a, b) == 1)
 		return 1;
 	else
 		return 0;
 }
 
+/* Helper Funktion um GGT zu bestimmen
+* bestimmt den ggt einer Zahl
+* @param a zu untersuchende Zahl
+* @param b zu untersuchende Zahl
+* @return rekursiver Funktionsaufruf / nach Rekursion wird der ggt zurueck gegeben
+*/
+
 int ggt(unsigned int a, unsigned int b) {
+	//Abbruchbedingung
 	if (b == 0)
 		return a;
 	else
 		return ggt(b, a%b);    // Magic happens here
 }
 
+/* Aufgabe 5
+* Berechnet den Binomialkoeffizienten n ueber k 
+* WARNUNG! bei grossem n und k steigt Laufzeit stark an!!!!!
+* @param n
+* @param k
+* @return n ueber k
+*/
+
+unsigned int binomialCoefficient(unsigned int n, unsigned int k){
+	//Abbruchbedingung
+	if (n == k || k == 0)
+		return 1;
+	//rekursiver Aufruf
+	return binomialCoefficient(n - 1, k) + binomialCoefficient(n - 1, k - 1);
+}
 
 

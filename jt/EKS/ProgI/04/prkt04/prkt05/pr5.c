@@ -1,5 +1,5 @@
 #include <stdio.h>
-//#include <math.h>
+#include <math.h>
 
 #define PI 3.1415
 
@@ -9,6 +9,7 @@ double circleCircumference(double radius);
 void printTri(unsigned int size);
 int areCoprime(unsigned int a, unsigned int b);
 int ggt(unsigned int a, unsigned int b);
+unsigned int binomialCoefficient(unsigned int n, unsigned int k);
 
 /*Aufgaben
 
@@ -93,6 +94,12 @@ int areCoprime(unsigned int a, unsigned int b) {
 		return 0;
 }
 
+/* Helper Funktion um GGT zu bestimmen
+* bestimmt den ggt einer Zahl
+* @param a zu untersuchende Zahl
+* @param b zu untersuchende Zahl
+* @return rekursiver Funktionsaufruf / nach Rekursion wird ggt returnt
+*/
 int ggt(unsigned int a, unsigned int b) {
 	if (b == 0)
 		return a;
@@ -100,5 +107,31 @@ int ggt(unsigned int a, unsigned int b) {
 		return ggt(b, a%b);    // Magic happens here
 }
 
+/* Aufgabe 5
+* Berechnet den Binomialkoeffizienten n ueber k
+* @param n
+* @param k
+* @return n ueber k
+*/
 
+//unsigned int binomialCoefficient(unsigned int n, unsigned int k) {
+//	unsigned long int i;
+//	unsigned long int bin = 1;
+//
+//	if (n <  0 || n > 20 || k < 0 || k > n) 
+//		return (-1);
+//
+//	if (k == 0 || k == n) 
+//		return (bin);
+//
+//	for (i = 1; i <= k; i++)
+//		bin =  bin * (n - i + 1) / i;
+//	
+//	return (bin);
+//}
 
+unsigned int binomialCoefficient(unsigned int n, unsigned int k){
+	if (n == k || k == 0)
+		return 1;
+	return C(n - 1, k) + C(n - 1, k - 1);
+}
