@@ -36,11 +36,15 @@ int find(int elem, const int a[], size_t size) {
 */
 
 int findRecN(int elem, size_t numOcc, const int a[], size_t size) {
-	if (size == 0)
-		return 0;
-	if (a[size] == elem) {
-		numOcc++;
+	int i;
+	if (size == 0 && numOcc == 0)
 		return 1;
+	if (size == 0 && numOcc != 0)
+		return 0;
+	
+	if (a[size] == elem ) {
+		numOcc--;
+		//printf("++%Iu++", numOcc);
 	}
 	return findRecN(elem, numOcc, a, size-1);
 }
