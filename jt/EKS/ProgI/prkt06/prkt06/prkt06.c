@@ -36,7 +36,6 @@ int find(int elem, const int a[], size_t size) {
 */
 
 int findRecN(int elem, size_t numOcc, const int a[], size_t size) {
-	int i;
 	if (size == 0 && numOcc == 0)
 		return 1;
 	if (size == 0 && numOcc != 0)
@@ -44,7 +43,6 @@ int findRecN(int elem, size_t numOcc, const int a[], size_t size) {
 	
 	if (a[size] == elem ) {
 		numOcc--;
-		//printf("++%Iu++", numOcc);
 	}
 	return findRecN(elem, numOcc, a, size-1);
 }
@@ -91,3 +89,11 @@ void rev(char a[]) {
 * @param dst Zielfeld
 * @param size Groesse des Feldes
 */
+
+void copyArray(int src[], int dst[], int size) {
+	int i;
+	for (i = 0; i < size; i++) {
+		dst[i] = src[i];
+	}
+	printf("%s", dst);
+}
