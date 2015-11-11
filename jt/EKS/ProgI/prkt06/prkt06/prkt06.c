@@ -90,10 +90,24 @@ void rev(char a[]) {
 * @param size Groesse des Feldes
 */
 
-void copyArray(int src[], int dst[], int size) {
+void copyArray(int src[], int dst[], size_t size) {
 	int i;
 	for (i = 0; i < size; i++) {
 		dst[i] = src[i];
 	}
 	printf("%s", dst);
+}
+
+/** Aufgabe 5.2
+* Kopiert den Inhalt von einem Quell- in ein Zielfeld rekursiv.
+* @param src Quellfeld
+* @param dst Zielfeld
+* @param size Groesse des Feldes
+*/
+
+void copyArrayRec(int src[], int dst[], size_t size) {
+	if (size == 0)
+		return 0;
+	dst[size] = src[size];	
+	return copyArrayRec(src, dst, size - 1);
 }
