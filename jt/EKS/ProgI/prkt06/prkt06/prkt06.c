@@ -1,3 +1,6 @@
+//Jan-Tjorve Sobieski
+//Praktikum 06 Hausaufgabe
+
 #include <stdio.h>
 #include <string.h>
 #include <assert.h>
@@ -15,10 +18,13 @@
 */
 
 int find(int elem, const int a[], size_t size) {
+	//Zaehlvariable
 	int i;
+	//Abbruchbedingung
 	if (size == 0)
 		return 0;
 	else
+	//Forschleife um Array zu durchsuchen maximal 'size' Ueberpruefungen
 		for (i = 0; i < size; i++) 
 			if (a[i] == elem) 
 				return 1;
@@ -36,14 +42,16 @@ int find(int elem, const int a[], size_t size) {
 */
 
 int findRecN(int elem, size_t numOcc, const int a[], size_t size) {
+	//Abbruchbedingung 1 Fall 
 	if (size == 0 && numOcc == 0)
 		return 1;
+	//Abbruchbedingung 2 Fall 
 	if (size == 0 && numOcc != 0)
 		return 0;
-	
-	if (a[size] == elem ) {
+	//Bedingung fuer Zaehlvariable
+	if (a[size] == elem )
 		numOcc--;
-	}
+	//rekursiver Funktionsaufruf mit Sizecounter -1
 	return findRecN(elem, numOcc, a, size-1);
 }
 
@@ -54,10 +62,13 @@ int findRecN(int elem, size_t numOcc, const int a[], size_t size) {
 */
 
 void fortyTwo(int a[], size_t size) {
+	//Zaehlvariable
 	int i;
+	//Abbruchbedingung
 	if (size == 0)
 		return 0;
 	else
+	//Forschleife zur Addition von 42 zu jedem Element
 		for (i = 0; i < size; i++)
 			a[i] = a[i] + 42;
 }
@@ -68,14 +79,17 @@ void fortyTwo(int a[], size_t size) {
 */
 
 void rev(char a[]) {
+	//Zaehlvariablen
 	int i;
 	int x;
+	//temporaere Variable fuer Variablenswap
 	char tmp;
+	//Forschleife um Laenge des Arrays zu ermitteln
 	for (i = 0; i < 81; i++) {
 		if (a[i] == '\0')
 			break;
 	}
-
+	//Forschleife Array zur Arraydrehung
 	for (x = 0; x < i / 2; x++) {	
 		tmp = a[x];
 		a[x] = a[i - x - 1];
@@ -91,11 +105,14 @@ void rev(char a[]) {
 */
 
 void copyArray(int src[], int dst[], size_t size) {
+	//Zaehlvariable fuer forschleife
 	int i;
+	//forschleife fuer Kopiervorgang
 	for (i = 0; i < size; i++) {
 		dst[i] = src[i];
 	}
-	printf("%s", dst);
+	//Ausgabe des Zielarrays
+	//printf("%s", dst);
 }
 
 /** Aufgabe 5.2
@@ -106,8 +123,12 @@ void copyArray(int src[], int dst[], size_t size) {
 */
 
 void copyArrayRec(int src[], int dst[], size_t size) {
+	//Abbruchbedingung
 	if (size == 0)
 		return 0;
+	//Kopiervorgang
+	//Quellenarray in Zielarray
 	dst[size] = src[size];	
+	//rekursiver Funktionsaufruf mit Sizecounter -1 und Ziel/Quellarray
 	return copyArrayRec(src, dst, size - 1);
 }
