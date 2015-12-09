@@ -9,9 +9,8 @@ int main(void) {
 	//int b = 2;
 	//swap42Fail(&a, &b);
 	//printf("3-a:%d  2-b:%d", a, b);
-
-	int* answer = yield42();
 	printf("Hello");
+	int* answer = yield42();
 	printf("%d", *answer);
 }
 
