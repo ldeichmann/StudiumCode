@@ -8,11 +8,8 @@ int main(void) {
 
 	RingBuffer rb = NULL;
 	char buffer[21];
-	double durchschnitt;
 	int buffersize = 0;
-	unsigned int zaehler = 0;
 	char input = NULL;
-	char* testbuf = NULL;
 	char cget = NULL;
 
 	char c = NULL;

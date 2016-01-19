@@ -15,7 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src.c">
+    <ClCompile Include="ringbuffer.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="youtube.c">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>
