@@ -1,3 +1,7 @@
+//Dennis Ott
+//Jan-Tjorve Sobieski
+//Praktikum 10
+
 #include <stdio.h>
 #include <string.h>
 #include <assert.h>
@@ -19,7 +23,7 @@ void addList(char** list, size_t size, char* name);
 * @return Zeiger auf den ersten Eintrag der Liste
 */
 char** initList(size_t size) {
-	//legt speicherplatz an und schreibt null rein
+	//legt speicherplatz an und schreibt NULL rein
 	char** chrptr = (char**)calloc(size,sizeof(char*));
 	//return 
 	return chrptr;
@@ -33,6 +37,7 @@ char** initList(size_t size) {
 */
 void freeList(char** list, size_t size) {
 	size_t i = 0;
+	if (list == NULL) return;
 	//gibt Speicherplatz wieder frei
 	for (i = 0; i < size; i++) {
 			free(list[i]);
@@ -48,6 +53,7 @@ void freeList(char** list, size_t size) {
 void printList(char** list, size_t size) {
 	size_t i = 0;
 	//Schleife fuer Ausgabe
+	if (list == NULL) return;
 	for (i = 0; i < size; i++) {
 		if (list[i] != NULL)
 			printf("%s\n", list[i]);
@@ -65,13 +71,19 @@ void printList(char** list, size_t size) {
 
 void addList(char** list, size_t size, char* name) {
 	size_t i = 0;
-	size_t j = 0;
+	char* upperName = (char*)calloc(strlen(name)+1, sizeof(char));
+	// Praesenzaufgabe 
+	if (isalpha(name))
+		while (name[i]) { // dirty hack!!!
+			upperName[i] = toupper(name[i]);
+			i++;
+		}
+	// for schleife zum adden in die Liste
+	if (list == NULL) return EXIT_FAILURE;
 	for (i = 0; i < size; i++) {
-		//Wenn liste an der Stelle null ist wird Speicherplatz angelegt und 
-		//name an die Stelle kopiert
 		if (list[i] == NULL) {
 			list[i] = (char*)calloc(strlen(name) + 1, sizeof(char));
-			strcpy(list[i], name);
+			strcpy(list[i], upperName);
 			break;
 		}
 	}
