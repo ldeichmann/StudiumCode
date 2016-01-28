@@ -72,6 +72,7 @@ char rbget(ringbuffer* buffer) {
 		buffer->data[i] = buffer->data[i - 1]; //Verschieben der size-1 Elemente nach links 
 	}
 	buffer->data[buffer->tail] = '_'; //Neusetzen des letzten Elements auf "freies" Element
+	buffer->tail++; //Tail neu setzen
 	return c; // Return des Ersten Elements
 }
 
@@ -80,6 +81,7 @@ char rbget(ringbuffer* buffer) {
 * @param buffer
 */
 void rbfree(ringbuffer* buffer) {
+	//free(buffer->data);
 	free(buffer); //Gibt die Struct wieder frei
 }
 

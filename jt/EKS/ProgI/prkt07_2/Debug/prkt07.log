@@ -1,0 +1,22 @@
+﻿Der Buildvorgang wurde am 11/17/2015 2:21:59 PM gestartet.
+     1>Projekt "C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgI\prkt06\prkt07\prkt07.vcxproj" auf Knoten "2", Build Ziel(e).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt prkt07.c
+         prkt07.c
+     1>c:\users\jj\documents\studiumcode\jt\eks\progi\prkt06\prkt07\prkt07.c(27): warning C4018: '<': Konflikt zwischen 'signed' und 'unsigned'
+     1>c:\users\jj\documents\studiumcode\jt\eks\progi\prkt06\prkt07\prkt07.c(67): warning C4098: 'fortyTwo': 'void'-Funktion gibt einen Wert zurück
+     1>c:\users\jj\documents\studiumcode\jt\eks\progi\prkt06\prkt07\prkt07.c(70): warning C4018: '<': Konflikt zwischen 'signed' und 'unsigned'
+     1>c:\users\jj\documents\studiumcode\jt\eks\progi\prkt06\prkt07\prkt07.c(106): warning C4018: '<': Konflikt zwischen 'signed' und 'unsigned'
+     1>c:\users\jj\documents\studiumcode\jt\eks\progi\prkt06\prkt07\prkt07.c(123): warning C4098: 'copyArrayRec': 'void'-Funktion gibt einen Wert zurück
+     1>c:\users\jj\documents\studiumcode\jt\eks\progi\prkt06\prkt07\prkt07.c(128): warning C4098: 'copyArrayRec': 'void'-Funktion gibt einen Wert zurück
+     1>c:\users\jj\documents\studiumcode\jt\eks\progi\prkt06\prkt07\prkt07.c(143): warning C4018: '<=': Konflikt zwischen 'signed' und 'unsigned'
+     1>c:\users\jj\documents\studiumcode\jt\eks\progi\prkt06\prkt07\prkt07.c(30): warning C4715: "find": Nicht alle Steuerelementpfade geben einen Wert zurück.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgI\prkt06\Debug\prkt07.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgI\prkt06\Debug\prkt07.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgI\prkt06\Debug\prkt07.lib" /MACHINE:X86 Debug\pr7main.obj
+         Debug\prkt07.obj
+         prkt07.vcxproj -> C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgI\prkt06\Debug\prkt07.exe
+     1>Die Erstellung des Projekts "C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgI\prkt06\prkt07\prkt07.vcxproj" ist abgeschlossen, Build Ziel(e).
+
+Build erfolgreich.
+
+Verstrichene Zeit 00:00:00.73

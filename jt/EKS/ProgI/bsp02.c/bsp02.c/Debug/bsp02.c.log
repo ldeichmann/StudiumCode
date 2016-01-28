@@ -1,0 +1,23 @@
+﻿Der Buildvorgang wurde am 1/26/2016 9:00:19 AM gestartet.
+     1>Projekt "C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgI\bsp02.c\bsp02.c\bsp02.c.vcxproj" auf Knoten "2", Build Ziel(e).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt bsp02.c
+         bsp02.c
+     1>c:\users\jj\documents\studiumcode\jt\eks\progi\bsp02.c\bsp02.c\bsp02.c(116): warning C4047: 'Initialisierung': Anzahl der Dereferenzierungen bei 'char' und 'void *' unterschiedlich
+     1>c:\users\jj\documents\studiumcode\jt\eks\progi\bsp02.c\bsp02.c\bsp02.c(119): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(211): Siehe Deklaration von 'fopen'
+     1>c:\users\jj\documents\studiumcode\jt\eks\progi\bsp02.c\bsp02.c\bsp02.c(168): warning C4047: 'Initialisierung': Anzahl der Dereferenzierungen bei 'pruefung' und 'pruefung *' unterschiedlich
+     1>c:\users\jj\documents\studiumcode\jt\eks\progi\bsp02.c\bsp02.c\bsp02.c(171): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112): Siehe Deklaration von 'strcpy'
+     1>c:\users\jj\documents\studiumcode\jt\eks\progi\bsp02.c\bsp02.c\bsp02.c(192): warning C4018: '<': Konflikt zwischen 'signed' und 'unsigned'
+     1>c:\users\jj\documents\studiumcode\jt\eks\progi\bsp02.c\bsp02.c\bsp02.c(193): warning C4018: '>=': Konflikt zwischen 'signed' und 'unsigned'
+     1>c:\users\jj\documents\studiumcode\jt\eks\progi\bsp02.c\bsp02.c\bsp02.c(189): warning C4101: 'j': Unreferenzierte lokale Variable
+     1>c:\users\jj\documents\studiumcode\jt\eks\progi\bsp02.c\bsp02.c\bsp02.c(247): warning C4101: 'dest': Unreferenzierte lokale Variable
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgI\bsp02.c\Debug\bsp02.c.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgI\bsp02.c\Debug\bsp02.c.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgI\bsp02.c\Debug\bsp02.c.lib" /MACHINE:X86 Debug\bsp02.obj
+         bsp02.c.vcxproj -> C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgI\bsp02.c\Debug\bsp02.c.exe
+     1>Die Erstellung des Projekts "C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgI\bsp02.c\bsp02.c\bsp02.c.vcxproj" ist abgeschlossen, Build Ziel(e).
+
+Build erfolgreich.
+
+Verstrichene Zeit 00:00:01.18

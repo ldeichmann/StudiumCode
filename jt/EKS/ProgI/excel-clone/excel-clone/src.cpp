@@ -51,8 +51,6 @@ void fillArray(int* numbers, int size,int rows, int cols) {
 
 		printf("bitte Wert eingeben ");
 		value = askNumbers();
-		if (value == -1)
-			break;
 
 		*(numbers + (zeile * rows + spalte )) = value;
 	}

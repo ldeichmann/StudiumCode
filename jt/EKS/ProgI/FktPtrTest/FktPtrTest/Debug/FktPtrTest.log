@@ -1,0 +1,18 @@
+﻿Der Buildvorgang wurde am 1/26/2016 9:23:39 AM gestartet.
+     1>Projekt "C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgI\FktPtrTest\FktPtrTest\FktPtrTest.vcxproj" auf Knoten "2", Build Ziel(e).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt test.c
+         test.c
+     1>c:\users\jj\documents\studiumcode\jt\eks\progi\fktptrtest\fktptrtest\test.c(7): warning C4047: 'return': Anzahl der Dereferenzierungen bei 'int' und 'int (__cdecl *)(int,int)' unterschiedlich
+     1>c:\users\jj\documents\studiumcode\jt\eks\progi\fktptrtest\fktptrtest\test.c(20): warning C4113: 'int (__cdecl *)(char *,float,int (__cdecl *)(int,int))' weicht in der Parameterliste von 'int (__cdecl *)(char *,float)' ab
+     1>c:\users\jj\documents\studiumcode\jt\eks\progi\fktptrtest\fktptrtest\test.c(21): warning C4047: 'Funktion': Anzahl der Dereferenzierungen bei 'int (__cdecl *)(int,int)' und 'int' unterschiedlich
+     1>c:\users\jj\documents\studiumcode\jt\eks\progi\fktptrtest\fktptrtest\test.c(21): warning C4024: 'deliver_fruit': Unterschiedliche Typen für formalen und übergebenen Parameter 3
+     1>c:\users\jj\documents\studiumcode\jt\eks\progi\fktptrtest\fktptrtest\test.c(32): warning C4013: 'strtol' undefiniert; Annahme: extern mit Rückgabetyp int
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgI\FktPtrTest\Debug\FktPtrTest.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgI\FktPtrTest\Debug\FktPtrTest.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgI\FktPtrTest\Debug\FktPtrTest.lib" /MACHINE:X86 Debug\test.obj
+         FktPtrTest.vcxproj -> C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgI\FktPtrTest\Debug\FktPtrTest.exe
+     1>Die Erstellung des Projekts "C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgI\FktPtrTest\FktPtrTest\FktPtrTest.vcxproj" ist abgeschlossen, Build Ziel(e).
+
+Build erfolgreich.
+
+Verstrichene Zeit 00:00:01.14

@@ -1,15 +1,15 @@
-﻿Der Buildvorgang wurde am 11/14/2015 11:05:38 PM gestartet.
+﻿Der Buildvorgang wurde am 11/17/2015 12:52:03 PM gestartet.
      1>Projekt "C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgI\prkt06\prkt06\prkt06.vcxproj" auf Knoten "2", Build Ziel(e).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _USING_V110_SDK71_ /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt prkt06.c
          prkt06.c
-     1>c:\users\jj\documents\studiumcode\jt\eks\progi\prkt06\prkt06\prkt06.c(28): warning C4018: '<': Konflikt zwischen 'signed' und 'unsigned'
-     1>c:\users\jj\documents\studiumcode\jt\eks\progi\prkt06\prkt06\prkt06.c(69): warning C4098: 'fortyTwo': 'void'-Funktion gibt einen Wert zurück
-     1>c:\users\jj\documents\studiumcode\jt\eks\progi\prkt06\prkt06\prkt06.c(72): warning C4018: '<': Konflikt zwischen 'signed' und 'unsigned'
-     1>c:\users\jj\documents\studiumcode\jt\eks\progi\prkt06\prkt06\prkt06.c(111): warning C4018: '<': Konflikt zwischen 'signed' und 'unsigned'
-     1>c:\users\jj\documents\studiumcode\jt\eks\progi\prkt06\prkt06\prkt06.c(128): warning C4098: 'copyArrayRec': 'void'-Funktion gibt einen Wert zurück
-     1>c:\users\jj\documents\studiumcode\jt\eks\progi\prkt06\prkt06\prkt06.c(133): warning C4098: 'copyArrayRec': 'void'-Funktion gibt einen Wert zurück
-     1>c:\users\jj\documents\studiumcode\jt\eks\progi\prkt06\prkt06\prkt06.c(31): warning C4715: "find": Nicht alle Steuerelementpfade geben einen Wert zurück.
+     1>c:\users\jj\documents\studiumcode\jt\eks\progi\prkt06\prkt06\prkt06.c(29): warning C4018: '<': Konflikt zwischen 'signed' und 'unsigned'
+     1>c:\users\jj\documents\studiumcode\jt\eks\progi\prkt06\prkt06\prkt06.c(70): warning C4098: 'fortyTwo': 'void'-Funktion gibt einen Wert zurück
+     1>c:\users\jj\documents\studiumcode\jt\eks\progi\prkt06\prkt06\prkt06.c(73): warning C4018: '<': Konflikt zwischen 'signed' und 'unsigned'
+     1>c:\users\jj\documents\studiumcode\jt\eks\progi\prkt06\prkt06\prkt06.c(112): warning C4018: '<': Konflikt zwischen 'signed' und 'unsigned'
+     1>c:\users\jj\documents\studiumcode\jt\eks\progi\prkt06\prkt06\prkt06.c(129): warning C4098: 'copyArrayRec': 'void'-Funktion gibt einen Wert zurück
+     1>c:\users\jj\documents\studiumcode\jt\eks\progi\prkt06\prkt06\prkt06.c(134): warning C4098: 'copyArrayRec': 'void'-Funktion gibt einen Wert zurück
+     1>c:\users\jj\documents\studiumcode\jt\eks\progi\prkt06\prkt06\prkt06.c(32): warning C4715: "find": Nicht alle Steuerelementpfade geben einen Wert zurück.
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgI\prkt06\Debug\prkt06.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgI\prkt06\Debug\prkt06.pdb" /SUBSYSTEM:CONSOLE,"5.01" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgI\prkt06\Debug\prkt06.lib" /MACHINE:X86 Debug\pr6main.obj
          Debug\prkt06.obj
@@ -18,4 +18,4 @@
 
 Build erfolgreich.
 
-Verstrichene Zeit 00:00:00.40
+Verstrichene Zeit 00:00:01.05

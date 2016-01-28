@@ -1,11 +1,11 @@
-﻿Der Buildvorgang wurde am 1/19/2016 2:30:40 PM gestartet.
+﻿Der Buildvorgang wurde am 1/19/2016 3:06:43 PM gestartet.
      1>Projekt "C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgI\prkt11\prkt11\prkt11.vcxproj" auf Knoten "2", Build Ziel(e).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt ringbuffer.c
          ringbuffer.c
      1>c:\users\jj\documents\studiumcode\jt\eks\progi\prkt11\prkt11\ringbuffer.c(27): warning C4013: 'malloc' undefiniert; Annahme: extern mit Rückgabetyp int
      1>c:\users\jj\documents\studiumcode\jt\eks\progi\prkt11\prkt11\ringbuffer.c(27): warning C4047: 'Initialisierung': Anzahl der Dereferenzierungen bei 'ringbuffer *' und 'int' unterschiedlich
-     1>c:\users\jj\documents\studiumcode\jt\eks\progi\prkt11\prkt11\ringbuffer.c(83): warning C4013: 'free' undefiniert; Annahme: extern mit Rückgabetyp int
+     1>c:\users\jj\documents\studiumcode\jt\eks\progi\prkt11\prkt11\ringbuffer.c(85): warning C4013: 'free' undefiniert; Annahme: extern mit Rückgabetyp int
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgI\prkt11\Debug\prkt11.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgI\prkt11\Debug\prkt11.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgI\prkt11\Debug\prkt11.lib" /MACHINE:X86 Debug\ringbuffer.obj
          Debug\youtube.obj
@@ -14,4 +14,4 @@
 
 Build erfolgreich.
 
-Verstrichene Zeit 00:00:04.50
+Verstrichene Zeit 00:00:01.32

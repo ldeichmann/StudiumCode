@@ -1,4 +1,5 @@
 //Jan-Tjorve Sobieski
+//Dennis Ott
 //Praktikum 06 Hausaufgabe
 
 #include <stdio.h>

