@@ -36,10 +36,9 @@ namespace _01
 	public void Aufblasen() {
         KugelRadius *= 8;
 	}
-
 	
 	public bool istKleinerGleich(Kugel K) {
-		if (KugelRadius <= K.KugelRadius)
+        if (KugelRadius <= K.KugelRadius)
             return true;
         else 
             return false;
