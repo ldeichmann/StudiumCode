@@ -11,16 +11,36 @@ namespace _02
     {
         private int temperature;
         private string name;
-        private bool fieber;
+        //private DateTime time;
 
-        public Messung(int t, String n) {
+                
+        public bool Fieber { get; private set; }
+        public DateTime Time { get; private set; }
+
+        
+
+        public Messung(int t, String n,  DateTime dt) {
             Temperature = t;
             Name = n;
+            Time = dt;
+        }
+        public Messung(int t, String n)
+        {
+            Temperature = t;
+            Name = n;
+            Time = DateTime.UtcNow;
+        }
+         
+        public Messung(String n, DateTime dt)
+        {
+            Name = n;
+            Time = dt;
         }
 
         public Messung(String n)
         {
             Name = n;
+            Time = DateTime.UtcNow;
         }
 
         public int Temperature 
@@ -29,7 +49,7 @@ namespace _02
             {
                 return temperature;
             }
-            protected set
+            private set
             {
                 if((value <= 41) && (value >= 18))
                     temperature = value;
@@ -37,8 +57,6 @@ namespace _02
                     Fieber = true;
             }
         }
-
-        public bool Fieber{ get; private set; }
 
         public string Name
         {
@@ -53,12 +71,13 @@ namespace _02
             }
         }
 
-        public bool Steigend(Messung m)
+       public static bool Steigend(Messung m1, Messung m2)
         {
-            if (m.Temperature > Temperature)
-                return true;
+
+            if (DateTime.Compare(m1.Time, m2.Time) <= 0)
+                return m1.Temperature > m2.Temperature;
             else
-                return false;
+                return m1.Temperature < m2.Temperature;
         }
-}
+    }
 }
