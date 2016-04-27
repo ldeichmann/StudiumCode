@@ -1,0 +1,6 @@
+C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgI\ConsoleApplication1\Gate\bin\Debug\Gate.exe.config
+C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgI\ConsoleApplication1\Gate\bin\Debug\Gate.exe
+C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgI\ConsoleApplication1\Gate\bin\Debug\Gate.pdb
+C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgI\ConsoleApplication1\Gate\obj\Debug\Gate.csprojResolveAssemblyReference.cache
+C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgI\ConsoleApplication1\Gate\obj\Debug\Gate.exe
+C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgI\ConsoleApplication1\Gate\obj\Debug\Gate.pdb

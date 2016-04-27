@@ -1,0 +1,6 @@
+C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgI\ConsoleApplication1\05\bin\Debug\05.exe.config
+C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgI\ConsoleApplication1\05\bin\Debug\05.exe
+C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgI\ConsoleApplication1\05\bin\Debug\05.pdb
+C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgI\ConsoleApplication1\05\obj\Debug\05.exe
+C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgI\ConsoleApplication1\05\obj\Debug\05.pdb
+C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgI\ConsoleApplication1\05\obj\Debug\05.csprojResolveAssemblyReference.cache
