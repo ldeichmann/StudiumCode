@@ -12,6 +12,7 @@ namespace GatesSwitchesDelegates
 
         public AndGate(params bool[] inports) : base(inports) { }
 
+        //gibt true zurueck wenn alle ports true sind sonst false
         public override bool OutPort
         {
             get
@@ -28,12 +29,6 @@ namespace GatesSwitchesDelegates
                 else
                     return false;
             }
-
-        //    set
-        //    {
-        //        if (GateToggled != null)
-        //            GateToggled(this);
-        //    }
         }
     }
 }

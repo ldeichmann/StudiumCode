@@ -8,11 +8,14 @@ namespace GatesSwitchesDelegates
     /// </summary>
     public abstract class Gate
     {
+
+        //variablen fuer Gate Delegates
         public delegate void delegateHandlerForGates(Gate g);
 
         public delegateHandlerForGates GateToggled;
 
 
+        //Array fuer Ports
         public Inport[] ports = null;
 
         /// <summary>
@@ -23,6 +26,7 @@ namespace GatesSwitchesDelegates
             get;
         }
 
+        //Konstruktor der Alle eingegeben Ports ins Klassenarray 'ports' schiebt
         public Gate(params bool[] inports)
         {
             ports = new Inport[inports.Length];
@@ -55,15 +59,20 @@ namespace GatesSwitchesDelegates
             return s;
         }
 
+        // Helper Klasse Inport die einen ein InputSwitch darstellt
         public class Inport {
 
+            //tmp Variable um den Zustand vom Gate mit zu uebergeben beim Instanzieren eines Gates mit Inports
             private Gate tmpGate;
+
+            // Standard Konstruktor
             public Inport(bool state, Gate g)
             {
                 State = state;
                 tmpGate = g;
             }
 
+            // Attribut state
             private bool state;
             public bool State
             {
@@ -71,6 +80,7 @@ namespace GatesSwitchesDelegates
                 {
                     return state;
                 }
+                // Setter der bei aenderung des Temporaeren Gates den GateEventhandler toggled
                 set
                 {
                     this.state = value;
@@ -79,16 +89,20 @@ namespace GatesSwitchesDelegates
                 }
             }
 
+            //Methoden werden registriert wenn flipflops mit Gates bzw Gates mit Gates verbunden werden
+            //1. ueberladung von connectport um 
             public void connectPort(TFlipFlop to)
             {
                 to.FlipFlogToggled += PortChanged;
             }
 
+            //2. ueberladung von connectport um switches mit Gates zu connecten
             public void connectPort(Gate g)
             {
                 g.GateToggled += PortChanged;
             }
 
+            //Methoden werden aufgerufen wenn ein FlipFlop/Gate geaendert wird
             public void PortChanged(TFlipFlop to)
             {
                 state = to.State;

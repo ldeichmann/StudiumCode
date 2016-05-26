@@ -14,6 +14,7 @@ namespace GatesSwitchesDelegates
 
         public OrGate(params bool[] inports) : base(inports) { }
 
+        //gibt true zurueck wenn nur ein port true ist
         public override bool OutPort
         {
             get
@@ -26,12 +27,6 @@ namespace GatesSwitchesDelegates
                 return false;
 
             }
-
-            //set
-            //{
-            //    if (GateToggled != null)
-            //        GateToggled(this);
-            //}
         }
     }
 }
