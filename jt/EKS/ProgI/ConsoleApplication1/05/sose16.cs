@@ -1,4 +1,7 @@
-﻿using System;
+﻿//Jan-Tjorve Sobieski
+//in Zusammenarbeit mit Dennis Ott und Arne Wagner
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -72,12 +75,14 @@ namespace _05
         /// 12  13  14  15
 		public bool MacheZug (int x, int y)
 		{
+            //Fall dass x /y ausserhalb des Spielfelds ist
             if (x > 3 || x < 0|| y > 3 || y < 0)
                 return false;
+            // Fall dass Kachel mit null auf x/y liegt
             if (spielfeld[x, y] == 0)
                 return false;
 
-
+            //Alle anderen Faelle / Also wenn Kachel einen oben/unten/rechts/links verschoben werden soll
             if (x-1 >= 0 && spielfeld[x - 1, y] == 0)
             {
                 spielfeld[x - 1, y] = spielfeld[x, y];
@@ -222,14 +227,15 @@ namespace _05
                     Loese(x + 1, y - 2);
                 }
             }
-
-
+            
+            //return wenn Algorithmus erfolgreich -> wenn Springer auf allen Feldern war
             if (zuege == 36) return true;
             zuege--;
             schachbrett[x, y] = 0;
             return false;
 		}
 
+        //helper Funktion um zu Ueberpruefen ob x/y ausserhalb des Arrays sind
         public bool notOutOfBound(int x, int y)
         {
             if (x >= 0 && x < 6 && y >= 0 && y < 6)

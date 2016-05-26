@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gate", "Gate\Gate.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05", "05\05.csproj", "{9E5FC191-775E-4B3C-AE80-E92EA22F95F2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lambdas", "lambdas\lambdas.csproj", "{F3EC2050-C45C-4BD7-AB11-2A1C690A9001}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApplication1", "WpfApplication1\WpfApplication1.csproj", "{356AE3E7-5649-4FAE-93BB-1C50DED38CE0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{9E5FC191-775E-4B3C-AE80-E92EA22F95F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E5FC191-775E-4B3C-AE80-E92EA22F95F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E5FC191-775E-4B3C-AE80-E92EA22F95F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3EC2050-C45C-4BD7-AB11-2A1C690A9001}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3EC2050-C45C-4BD7-AB11-2A1C690A9001}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3EC2050-C45C-4BD7-AB11-2A1C690A9001}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3EC2050-C45C-4BD7-AB11-2A1C690A9001}.Release|Any CPU.Build.0 = Release|Any CPU
+		{356AE3E7-5649-4FAE-93BB-1C50DED38CE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{356AE3E7-5649-4FAE-93BB-1C50DED38CE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{356AE3E7-5649-4FAE-93BB-1C50DED38CE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{356AE3E7-5649-4FAE-93BB-1C50DED38CE0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
