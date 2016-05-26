@@ -29,7 +29,7 @@ Ihre Entscheidung.
 
 #include <stdio.h>
 
-int messwerteingabe(void) {
+int main(void) {
 
 	
 	char buffer[21];
@@ -82,11 +82,5 @@ int messwerteingabe(void) {
 	printf("\n\ndas Ergebnis ist: %lf\n\n", summe / zaehler);
 	printf("\n\nMaxwert ist: %lf und er kommt %d vor\n\n", maxv, maxcount);
 
-	return 0;
-}
-
-int main(void) {
-
-	messwerteingabe();
 	return 0;
 }
