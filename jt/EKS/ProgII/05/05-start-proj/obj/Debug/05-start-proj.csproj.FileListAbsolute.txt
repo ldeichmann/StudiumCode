@@ -1,0 +1,6 @@
+C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgII\05\05-start-proj\bin\Debug\05-start-proj.exe.config
+C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgII\05\05-start-proj\bin\Debug\05-start-proj.exe
+C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgII\05\05-start-proj\bin\Debug\05-start-proj.pdb
+C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgII\05\05-start-proj\obj\Debug\05-start-proj.csprojResolveAssemblyReference.cache
+C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgII\05\05-start-proj\obj\Debug\05-start-proj.exe
+C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgII\05\05-start-proj\obj\Debug\05-start-proj.pdb

@@ -1,0 +1,6 @@
+C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgII\06\06\bin\Debug\06.exe.config
+C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgII\06\06\obj\Debug\06.csprojResolveAssemblyReference.cache
+C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgII\06\06\bin\Debug\06.exe
+C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgII\06\06\bin\Debug\06.pdb
+C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgII\06\06\obj\Debug\06.exe
+C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgII\06\06\obj\Debug\06.pdb

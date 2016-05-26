@@ -1,0 +1,5 @@
+C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgII\05\05\bin\Debug\05.dll
+C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgII\05\05\bin\Debug\05.pdb
+C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgII\05\05\obj\Debug\05.csprojResolveAssemblyReference.cache
+C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgII\05\05\obj\Debug\05.dll
+C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgII\05\05\obj\Debug\05.pdb

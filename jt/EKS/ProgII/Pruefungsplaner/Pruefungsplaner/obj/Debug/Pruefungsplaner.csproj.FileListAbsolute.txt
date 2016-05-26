@@ -1,0 +1,6 @@
+C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgII\Pruefungsplaner\Pruefungsplaner\bin\Debug\Pruefungsplaner.exe.config
+C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgII\Pruefungsplaner\Pruefungsplaner\obj\Debug\Pruefungsplaner.csprojResolveAssemblyReference.cache
+C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgII\Pruefungsplaner\Pruefungsplaner\bin\Debug\Pruefungsplaner.exe
+C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgII\Pruefungsplaner\Pruefungsplaner\bin\Debug\Pruefungsplaner.pdb
+C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgII\Pruefungsplaner\Pruefungsplaner\obj\Debug\Pruefungsplaner.exe
+C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgII\Pruefungsplaner\Pruefungsplaner\obj\Debug\Pruefungsplaner.pdb

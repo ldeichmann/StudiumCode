@@ -1,0 +1,5 @@
+C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgII\07\07\bin\Debug\07.exe.config
+C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgII\07\07\bin\Debug\07.exe
+C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgII\07\07\bin\Debug\07.pdb
+C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgII\07\07\obj\Debug\07.exe
+C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgII\07\07\obj\Debug\07.pdb
