@@ -45,6 +45,7 @@
     <Compile Include="Gate.cs" />
     <Compile Include="GateSimulator.cs" />
     <Compile Include="InputSwitch.cs" />
+    <Compile Include="NotGate.cs" />
     <Compile Include="OrGate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TFlipFlop.cs" />

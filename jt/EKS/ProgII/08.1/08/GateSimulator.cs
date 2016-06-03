@@ -6,14 +6,14 @@ namespace GatesSwitchesDelegates
     {
         static void Main(string[] args)
         {
-            List<Gate> gates = new List<Gate>() { new AndGate(true,true, false), new AndGate(false, false, true, false), new OrGate(true, true)};
+            List<Gate> gates = new List<Gate>() { new AndGate(true,true), new AndGate(true, false,false), new OrGate(false,false)};
             List<TFlipFlop> inputs = new List<TFlipFlop>() { new TFlipFlop(), new TFlipFlop(), new TFlipFlop()};
             ConsoleKeyInfo input;
 
             // Verbinden von Gates und Switches
-            gates[0].ports[0].connectPort(inputs[0]);
-            gates[0].ports[1].connectPort(inputs[1]);
-            gates[0].ports[2].connectPort(inputs[2]);
+            gates[1].ports[0].connectPort(inputs[0]);
+            gates[1].ports[1].connectPort(inputs[1]);
+            gates[1].ports[2].connectPort(inputs[2]);
             do
             {
                 Console.Clear();

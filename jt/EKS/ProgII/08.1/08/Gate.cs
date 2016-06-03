@@ -42,13 +42,13 @@ namespace GatesSwitchesDelegates
         {
             String s = "";
 
-            for (int i = 0; i < ports.Length; i++)
+            for (int i = 0; i < ports.Length-1; i++)
             {
                 
                 s += ports[i].State + " " + Type + " ";
             }
 
-            s += OutPort + "\n";
+            s += ports[ports.Length-1].State + " = " + OutPort + "\n";
             return s;
         }
 

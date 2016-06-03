@@ -6,23 +6,33 @@ namespace GatesSwitchesDelegates
     {
         static void Main(string[] args)
         {
-            List<Gate> gates = new List<Gate>() { new AndGate(true,true, false), new AndGate(false, false, true, false), new OrGate(true, true)};
-            List<TFlipFlop> inputs = new List<TFlipFlop>() { new TFlipFlop(), new TFlipFlop(), new TFlipFlop()};
+            List<Gate> gates = new List<Gate>() { new AndGate(false, false), new AndGate(false, false), new OrGate(false, false), new NotGate(true)};
+            List<TFlipFlop> inputs = new List<TFlipFlop>() { new TFlipFlop(), new TFlipFlop(), new TFlipFlop(), new TFlipFlop()};
             ConsoleKeyInfo input;
 
             // Verbinden von Gates und Switches
+            //gates[0].ports[0].connectPort(inputs[0]);
+            //gates[0].ports[1].connectPort(inputs[1]);
+            //gates[0].ports[2].connectPort(inputs[2]);
+
+            //gates[1].ports[0].connectPort(inputs[2]);
+            //gates[1].ports[1].connectPort(inputs[2]);
+            //gates[1].ports[2].connectPort(inputs[1]);
+
+            //gates[2].ports[1].connectPort(gates[0]);
+            
+
             gates[0].ports[0].connectPort(inputs[0]);
+            gates[2].ports[0].connectPort(gates[0]);
+
             gates[0].ports[1].connectPort(inputs[1]);
-            gates[0].ports[2].connectPort(inputs[2]);
+
+            gates[1].ports[0].connectPort(inputs[1]);
+            gates[2].ports[1].connectPort(gates[1]);
 
             gates[1].ports[0].connectPort(inputs[2]);
-            gates[1].ports[1].connectPort(inputs[2]);
-            gates[1].ports[2].connectPort(inputs[1]);
 
-            gates[2].ports[0].connectPort(inputs[2]);
-            gates[2].ports[1].connectPort(inputs[0]);
-            gates[2].ports[2].connectPort(inputs[1]);
-
+            gates[3].ports[0].connectPort(inputs[3]);
 
             do
             {

@@ -8,3 +8,9 @@ C:\Users\tweekx\Documents\StudiumCode\jt\EKS\ProgII\08\08\bin\Debug\08.exe.confi
 C:\Users\tweekx\Documents\StudiumCode\jt\EKS\ProgII\08\08\obj\Debug\08.pdb
 C:\Users\tweekx\Documents\StudiumCode\jt\EKS\ProgII\08.2\08\bin\Debug\08.exe.config
 C:\Users\tweekx\Documents\StudiumCode\jt\EKS\ProgII\08.2\08\obj\Debug\08.pdb
+C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgII\08.2\08\bin\Debug\08.exe.config
+C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgII\08.2\08\obj\Debug\08.pdb
+C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgII\08.2\08\bin\Debug\08.exe
+C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgII\08.2\08\bin\Debug\08.pdb
+C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgII\08.2\08\obj\Debug\08.csprojResolveAssemblyReference.cache
+C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgII\08.2\08\obj\Debug\08.exe
