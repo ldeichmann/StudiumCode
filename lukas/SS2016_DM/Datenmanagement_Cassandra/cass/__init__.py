@@ -30,10 +30,10 @@ class CassandraMenu:
                 print("Invalid input")
 
     def show(self):
-        rows = self.session.execute("SELECT id, album, artist, title FROM playlists")
+        rows = self.session.execute("SELECT * FROM playlists")
 
         for pl_row in rows:
-            print(pl_row.id, pl_row.album, pl_row.artist, pl_row.title)
+            print(pl_row.id, pl_row.song_order, "\t", pl_row.artist, "-",pl_row.title, "\t", pl_row.tags, "\t\t",pl_row.album)
 
         print("")
 
@@ -66,7 +66,7 @@ class CassandraMenu:
             artist = input("Enter Artist: ")
             rows = self.session.execute("SELECT * FROM playlists WHERE artist='{0}'".format(artist))
             for pl_row in rows:
-                print(pl_row.id, pl_row.album, pl_row.artist, pl_row.title)
+                print(pl_row.id, pl_row.song_order, "\t", pl_row.artist, "-",pl_row.title, "\t" ,pl_row.album)
 
         except Exception as e:
             print(e)
