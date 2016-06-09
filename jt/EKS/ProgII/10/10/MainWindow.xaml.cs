@@ -128,5 +128,15 @@ namespace _10
             offset++;
             txtbox2.Text = Convert.ToString(offset);
         }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void txtbox2_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
