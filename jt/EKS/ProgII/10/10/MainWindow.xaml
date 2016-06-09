@@ -7,7 +7,7 @@
             <ColumnDefinition Width="233*"/>
             <ColumnDefinition Width="284*"/>
         </Grid.ColumnDefinitions>
-        <TextBox x:Name="txtbox1" HorizontalAlignment="Left" Height="175" Margin="30,34,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="430" RenderTransformOrigin="0.5,0.5" TextChanged="TextBox_TextChanged" Grid.ColumnSpan="2" AcceptsReturn="True">
+        <TextBox x:Name="txtbox1" HorizontalAlignment="Left" Height="175" Margin="30,34,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="430" RenderTransformOrigin="0.5,0.5" TextChanged="TextBox_TextChanged" Grid.ColumnSpan="2" AcceptsReturn="True">
             <TextBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -17,9 +17,11 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <TextBox x:Name="txtbox2" HorizontalAlignment="Left" Height="23" Margin="43,273,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Encrypt" HorizontalAlignment="Left" Margin="211,276,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="txtbox2" HorizontalAlignment="Left" Height="23" Margin="43,273,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="59" TextChanged="txtbox2_TextChanged"/>
+        <Button Content="Encrypt" HorizontalAlignment="Left" Margin="37,276,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1" Grid.Column="1"/>
         <Button Content="Decrypt" HorizontalAlignment="Left" Margin="131.235,276,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" Grid.Column="1"/>
+        <Button x:Name="button1" Content="+" HorizontalAlignment="Left" Margin="115,273,0,0" VerticalAlignment="Top" Width="24" Click="button_Click_2"/>
+        <Button x:Name="button2" Content="-" HorizontalAlignment="Left" Margin="144,273,0,0" VerticalAlignment="Top" Width="24" Click="button1_Click"/>
 
     </Grid>
 </Window>

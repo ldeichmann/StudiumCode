@@ -11,3 +11,16 @@ C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgII\10\10\obj\Debug\_10.Properties.R
 C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgII\10\10\obj\Debug\10.csproj.GenerateResource.Cache
 C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgII\10\10\obj\Debug\10.exe
 C:\Users\jj\Documents\StudiumCode\jt\EKS\ProgII\10\10\obj\Debug\10.pdb
+C:\Users\tweekx\Documents\StudiumCode\jt\EKS\ProgII\10\10\bin\Debug\10.exe.config
+C:\Users\tweekx\Documents\StudiumCode\jt\EKS\ProgII\10\10\obj\Debug\10.pdb
+C:\Users\tweekx\Documents\StudiumCode\jt\EKS\ProgII\10\10\bin\Debug\10.exe
+C:\Users\tweekx\Documents\StudiumCode\jt\EKS\ProgII\10\10\bin\Debug\10.pdb
+C:\Users\tweekx\Documents\StudiumCode\jt\EKS\ProgII\10\10\obj\Debug\10.csprojResolveAssemblyReference.cache
+C:\Users\tweekx\Documents\StudiumCode\jt\EKS\ProgII\10\10\obj\Debug\MainWindow.baml
+C:\Users\tweekx\Documents\StudiumCode\jt\EKS\ProgII\10\10\obj\Debug\MainWindow.g.cs
+C:\Users\tweekx\Documents\StudiumCode\jt\EKS\ProgII\10\10\obj\Debug\App.g.cs
+C:\Users\tweekx\Documents\StudiumCode\jt\EKS\ProgII\10\10\obj\Debug\10_MarkupCompile.cache
+C:\Users\tweekx\Documents\StudiumCode\jt\EKS\ProgII\10\10\obj\Debug\10.g.resources
+C:\Users\tweekx\Documents\StudiumCode\jt\EKS\ProgII\10\10\obj\Debug\_10.Properties.Resources.resources
+C:\Users\tweekx\Documents\StudiumCode\jt\EKS\ProgII\10\10\obj\Debug\10.csproj.GenerateResource.Cache
+C:\Users\tweekx\Documents\StudiumCode\jt\EKS\ProgII\10\10\obj\Debug\10.exe
